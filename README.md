@@ -29,6 +29,7 @@ Update path
 echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.profile
 source ~./profile
 ```
+Install podman for support of navigator
 ```
 $ sudo dnf install podman
 ```
