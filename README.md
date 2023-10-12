@@ -29,6 +29,13 @@ $ python3 -m pip install ansible-navigator --user
 $ sudo dnf install podman
 ```
 
+Login to redhat.registry.io
+```
+$ podman login registry.redhat.io
+Username: your-userid
+Password: 
+Login Succeeded!
+```  
 ```
 $ ansible-navigator
 ```
