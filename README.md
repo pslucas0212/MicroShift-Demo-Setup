@@ -23,8 +23,12 @@ $ sudo dnf install python3-pip
 
 ```
 $ python3 -m pip install ansible-navigator --user
+```  
+Update path
 ```
-
+echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.profile
+source ~./profile
+```
 ```
 $ sudo dnf install podman
 ```
