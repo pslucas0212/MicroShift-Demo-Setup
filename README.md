@@ -87,6 +87,14 @@ Dependencies resolved.
 
 Complete!
 ```
+Download Device Edge Workshops Github repo.
+1. Create and set peronal access token.  See this link for setting up personal access token - [Managing peronsal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#).  Set GH_KEY variable 
+```
+```
+2. Download repo
+```
+$ gh repo clone redhat-manufacturing/device-edge-workshops
+```
 Add your AWS credentials to your environment.  Permanently persist add them to your ```~/.bash_rc``` file.
 ```
 export AWS_ACCESS_KEY_ID=YOURACCESSKEYHERE
