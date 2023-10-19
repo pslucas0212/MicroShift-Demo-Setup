@@ -75,6 +75,11 @@ Add ansible user to sudo account
 uid=1001(ansible) gid=1001(ansible) groups=1001(ansible),10(wheel)
 ```
 
+Add your AWS credentials to your environment.  Permanently persist add them to your ```~/.bash_rc``` file.
+```
+export AWS_ACCESS_KEY_ID=YOURACCESSKEYHERE
+export AWS_SECRET_ACCESS_KEY=YouRS3dh4TKEYHeRE
+```
 
 
 ### Appendix
