@@ -74,7 +74,19 @@ Add ansible user to sudo account
 # id ansible
 uid=1001(ansible) gid=1001(ansible) groups=1001(ansible),10(wheel)
 ```
+Install Github cli tool
+```
+$ sudo dnf install 'dnf-command(config-manager)'
+$ sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+$ sudo dnf install gh
+Updating Subscription Management repositories.
+packages for the GitHub CLI                                                                         7.1 kB/s | 2.6 kB     00:00    
+Last metadata expiration check: 0:00:01 ago on Thu 19 Oct 2023 02:59:12 PM CDT.
+Dependencies resolved.
+...
 
+Complete!
+```
 Add your AWS credentials to your environment.  Permanently persist add them to your ```~/.bash_rc``` file.
 ```
 export AWS_ACCESS_KEY_ID=YOURACCESSKEYHERE
