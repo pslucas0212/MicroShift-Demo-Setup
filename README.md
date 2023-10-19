@@ -90,6 +90,7 @@ Complete!
 Download Device Edge Workshops Github repo.
 1. Create and set peronal access token.  See this link for setting up personal access token - [Managing peronsal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#).  Set GH_KEY variable 
 ```
+$ export GH_TOKEN=addY0urT0kenH3re
 ```
 2. Download repo
 ```
