@@ -1,0 +1,18 @@
+all:
+  children:
+    local:
+      children:
+        edge_management:
+          hosts:
+            edge-manager-local:
+              
+  vars:
+    ansible_host: 10.1.1.36
+    ansible_user: ansible
+    ansible_password: ansible 
+    ansible_become_password: ansible
+    external_connection: ens160 
+    internal_connection: ens192
+    lab_wifi_network:
+      ssid: RedHatEdge
+      password: 'R3dh4t123!'
