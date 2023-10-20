@@ -1,0 +1,77 @@
+---
+
+# Required Variables
+
+# Set the content type
+workshop_or_demo: demo
+
+# Set the right workshop or demo type
+demo_type: summit_connect_2023
+
+# Set the number of student slots
+student_total: 1
+
+# Authentication to the container registry  Note! Enter username and password for quay.io
+redhat_username: <quayio_user_name>
+redhat_password: <quayio_password>
+  
+# DNS settings
+# If using an AWS Open Environment, a DNS zone will be provisioned for you, or feel free to use your own deletated to Rout53 Note! base_zone is derived from your AWS Open Environment in RHPDS - Top level route53 domain: .sandbox745.opentlc.com
+base_zone: sandbox745.opentlc.com
+# The subdomain for the workshop - usually the customer name or event
+sub_domain: summit-connect-2023
+
+
+# Your zerossl information from https://app.zerossl.com/developer  Note! Go to <> Developer link on zerossl.com and click on the EAB Credentials button.  Copy EAB KID to kid: and EAB HMAC Key to key
+zerossl_account:
+  kid: <EAB KID>
+  key: <EAB HMAC Key>
+  alg: HS256
+
+# Your pull secret from console.redhat.com
+# To find yours, visit this link: https://console.redhat.com/openshift/downloads#tool-pull-secret
+pull_secret: <your ocp pull secret from console.redhat.com>
+
+# The base64 of your controller manifest (may be long) - Note! Convert your AAP manifest to base 64.  Place single quotes around the base 64 manifest
+base64_manifest: '<base 54AAP manifest>'
+
+# Generate offline token to authenticate the calls to Red Hat's APIs
+# Can be accessed at https://access.redhat.com/management/api
+offline_token: '<your offline token from access.redhat.com>'
+# admin password for workshop services
+admin_password: <create a password>
+
+# Optional Variables - shouldn't need to be configured
+
+# turn DNS on for control nodes, and set to type in valid_dns_type
+dns_type: aws
+
+# Sets the Route53 DNS zone to use for Amazon Web Services
+workshop_dns_zone: "{{ base_zone }}"
+
+# name prefix for all the VMs
+ec2_name_prefix: "{{ sub_domain }}"
+
+# where the workshop is being run
+run_in_aws: false
+run_locally: true
+
+# if local hypervisor nodes should be configured
+manage_local_hypervisor: false
+
+# region where the nodes will live
+ec2_region: us-east-2
+
+# Use zeroSSL
+use_zerossl: true
+
+# automatically installs Tower to control node
+controllerinstall: true
+
+# forces ansible.workshops collection to install latest edits every time
+developer_mode: false
+
+# Don't need automation hub
+automation_hub: false
+
+#builder_pub_key: 'ssh-rsa abc123'
