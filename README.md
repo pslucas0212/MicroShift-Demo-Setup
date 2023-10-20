@@ -96,6 +96,12 @@ $ export GH_TOKEN=addY0urT0kenH3re
 ```
 $ gh repo clone redhat-manufacturing/device-edge-workshops
 ```
+
+If you need to update the repo, go to the ... direcotory and the sync command..
+```
+$ gh sync repo
+```
+
 Add your AWS credentials to your environment.  Permanently persist add them to your ```~/.bash_rc``` file.
 ```
 export AWS_ACCESS_KEY_ID=YOURACCESSKEYHERE
