@@ -40,7 +40,9 @@ $ podman login registry.redhat.io
 Username: your-userid
 Password: 
 Login Succeeded!
-```  
+```
+
+Test Ansible Navigator
 ```
 $ ansible-navigator
 ```
@@ -102,12 +104,14 @@ If you need to update the repo, go to the ... direcotory and the sync command..
 $ gh sync repo
 ```
 
-Add your AWS credentials to your environment.  Permanently persist add them to your ```~/.bash_rc``` file.
+Add your AWS credentials to your environment.  Permanently persist add them to your ```~/.bash_rc``` file.  You get the keys from your RHPDS open environment.
 ```
 export AWS_ACCESS_KEY_ID=YOURACCESSKEYHERE
 export AWS_SECRET_ACCESS_KEY=YouRS3dh4TKEYHeRE
 ```
 
+Update the extra-vars.yml file.   
+1. 
 
 ### Appendix
 - [Installing ansible-navigator with execution environment support](https://ansible.readthedocs.io/projects/navigator/installation/)
