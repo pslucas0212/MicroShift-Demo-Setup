@@ -62,7 +62,7 @@ Add ansible user to sudo account
 ```
 # visudo
 ```
-2. In the /etc/sudoers file, find the lines that grant sudo access to users in the administrative wheel group.
+2. In the /etc/sudoers file, find the lines that grant sudo access to users in the administrative wheel group.  Make sure the group is uncommented (remove # if it start the line).
 ```
 ## Allows people in group wheel to run all commands
 %wheel        ALL=(ALL)       ALL
@@ -113,6 +113,11 @@ export AWS_SECRET_ACCESS_KEY=YouRS3dh4TKEYHeRE
 Update the extra-vars.yml file.   
 1. 
 
+Run playbook from folder/directory where the local-inventory.ym and extra-vars.yml are located.
+```
+$ ansible-navigator run provisioner/provision_lab.yml --inventory local-inventory.yml --extra-vars @extra-vars.yml -vv -m stdout
+```
 ### Appendix
 - [Installing ansible-navigator with execution environment support](https://ansible.readthedocs.io/projects/navigator/installation/)
 - [How do I install podman in RHEL 8 or 9?](https://access.redhat.com/solutions/3650231)
+- [Red Hat Device Edge Workshop Provisioner](https://github.com/redhat-manufacturing/device-edge-workshops/tree/main/provisioner)
