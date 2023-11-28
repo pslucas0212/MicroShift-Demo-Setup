@@ -104,9 +104,9 @@ $ export GH_TOKEN=addY0urT0kenH3re
 $ gh repo clone redhat-manufacturing/device-edge-workshops
 ```
 
-If you need to update the repo, go to the ... direcotory and the sync command..
+If you need to update the repo, go to the device-edge-workshops directory and the sync command..
 ```
-$ gh sync repo
+$ gh repo sync
 ```
 
 Add your AWS credentials to your environment.  Permanently persist add them to your ```~/.bash_rc``` file.  You get the keys from your RHPDS open environment.
