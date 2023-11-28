@@ -111,7 +111,7 @@ export AWS_SECRET_ACCESS_KEY=YouRS3dh4TKEYHeRE
 ```
 
 Update the extra-vars.yml file.   
-1. 
+- [extra-vars.yml sample file](https://github.com/pslucas0212/MicroShift-Demo-Setup/blob/main/extra-vars.yaml)
 
 Run playbook from folder/directory where the local-inventory.ym and extra-vars.yml are located.
 ```
