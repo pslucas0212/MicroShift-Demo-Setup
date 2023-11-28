@@ -113,6 +113,42 @@ export AWS_SECRET_ACCESS_KEY=YouRS3dh4TKEYHeRE
 Update the extra-vars.yml file.   
 - [extra-vars.yml sample file](https://github.com/pslucas0212/MicroShift-Demo-Setup/blob/main/extra-vars.yaml)
 
+You will need to update the following sectios:
+```
+# Authentication to the container registry
+redhat_username: registry_id
+redhat_password: registryPassword
+```
+```
+# Your zerossl information from https://app.zerossl.com/developer
+zerossl_account:
+  kid: u...w
+  key: 1U3...xs4A
+  alg: HS256
+```
+```
+# Your pull secret from console.redhat.com
+# To find yours, visit this link: https://console.redhat.com/openshift/downloads#tool-pull-secret
+pull_secret: {"auths":{"cloud.openshift.com":..."}}}
+```
+```# The base64 of your controller manifest (may be long)
+base64_manifest: 'UEsDBBQACAgIA...='
+```
+```
+# Generate offline token to authenticate the calls to Red Hat's APIs
+# Can be accessed at https://access.redhat.com/management/api
+offline_token: eyJhb...8J0
+```
+
+```
+# admin password for workshop services
+admin_password: YourPasswordHere
+```
+
+
+
+
+
 Run playbook from folder/directory where the local-inventory.ym and extra-vars.yml are located.
 ```
 $ ansible-navigator run provisioner/provision_lab.yml --inventory local-inventory.yml --extra-vars @extra-vars.yml -vv -m stdout
