@@ -1,6 +1,11 @@
 # MicroShift Demo Setup
 
-Install RHEL 9.2
+## VMWare Fusion Setup
+- Enable Wifi - Primary network adapter - Bridged (Wi-Fi)
+- Second Network adapter - Create a custom network to communicate with Edge device.  Settings - Type: Customer, Subnet IP: 192.168.1.0, Subnet Mask: 255.255.255.0
+  
+
+## Install RHEL 9.2
 
 Register system
 ```
@@ -49,8 +54,8 @@ $ ansible-navigator
 
 Create a non-root ansible user that can sudo
 ```
-# useradd ansible
-# passwd ansible
+# useradd ansible_user
+# passwd ansible_password
 Changing password for user ansible.
 New password: 
 Retype new password: 
