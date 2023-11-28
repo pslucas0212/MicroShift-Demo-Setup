@@ -2,7 +2,7 @@
 
 ## VMWare Fusion Setup
 - Enable Wifi - Primary network adapter - Bridged (Wi-Fi)
-- Second Network adapter - Create a custom network to communicate with Edge device.  Settings - Type: Customer, Subnet IP: 192.168.1.0, Subnet Mask: 255.255.255.0
+- Second Network adapter - Create a custom network to communicate with Edge device.  Settings - Type: Custom, Subnet IP: 192.168.1.0, Subnet Mask: 255.255.255.0
   
 
 ## Install RHEL 9.2
