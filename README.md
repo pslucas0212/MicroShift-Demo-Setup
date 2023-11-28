@@ -115,7 +115,7 @@ export AWS_ACCESS_KEY_ID=YOURACCESSKEYHERE
 export AWS_SECRET_ACCESS_KEY=YouRS3dh4TKEYHeRE
 ```
 
-Update the extra-vars.yml file.   
+### Update the extra-vars.yml file.   
 - [extra-vars.yml sample file](https://github.com/pslucas0212/MicroShift-Demo-Setup/blob/main/extra-vars.yaml)
 
 You will need to update the following sectios:
